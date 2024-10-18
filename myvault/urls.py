@@ -19,10 +19,12 @@ from django.urls import path, include
 from rest_framework import routers
 from movies.views import MovieViewSet
 from anime.views import AnimeViewSet
+from games.views import GameViewSet
 
 router = routers.DefaultRouter()
 router.register('movies',MovieViewSet)
 router.register('anime', AnimeViewSet)
+router.register('games', GameViewSet)
 
 
 urlpatterns = [
