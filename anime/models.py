@@ -10,4 +10,5 @@ class AnimeData(models.Model):
     id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=500)
     genre = models.CharField(max_length=100)
+    is_movie = models.BooleanField(default=False)
     year_of_release = models.IntegerField()
