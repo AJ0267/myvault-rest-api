@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
         {
-            "src": "movies/wsgi.py", 
+            "src": "myvault/wsgi.py", 
             "use": "@vercel/python"
         }
     ],
     "routes": [
         {
             "src": "/api/(.*)",
-            "dest": "movies/wsgi.py" 
+            "dest": "myvault/wsgi.py" 
         }
     ]
 }
